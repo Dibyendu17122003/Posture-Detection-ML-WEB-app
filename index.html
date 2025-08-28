@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoseNet Fitness Tracker</title>
+  
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <!-- ml5.js -->
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PoseNet Fitness Tracker 🏋️‍♂️</h1>
+  
+  <!-- Whole Layout -->
+  <div class="layout">
+    
+    <!-- LEFT SIDE -->
+    <div class="left-side">
+      <!-- Dashboard -->
+      <div id="dashboard">
+        <div class="panel">
+          <h3>Reps</h3>
+          <p id="rep-count">0</p>
+        </div>
+        <div class="panel">
+          <h3>Calories</h3>
+          <p id="calories">0</p>
+        </div>
+        <div class="panel">
+          <h3>Height</h3>
+          <p id="height">0 cm</p>
+        </div>
+        <div class="panel">
+          <h3>Mode</h3>
+          <select id="mode-select">
+            <option value="squats">Squats</option>
+            <option value="pushups">Pushups</option>
+            <option value="jumpingjacks">Jumping Jacks</option>
+            <option value="handraises">Hand Raises</option>
+          </select>
+        </div>
+        <div class="panel">
+          <h3>Dark Mode</h3>
+          <button id="dark-toggle">Toggle</button>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="panel chart-panel">
+        <canvas id="repsChart"></canvas>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-side">
+      <div id="canvas-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Main Script -->
+  <script src="sketch.js"></script>
+</body>
+</html>
