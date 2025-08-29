@@ -165,8 +165,6 @@ function analyzePushUp(keypoints) {
 
 <div align="center">
 
-![Advanced Analytics Dashboard](https://via.placeholder.com/1000x500/2D3748/FFFFFF/?text=Comprehensive+Performance+Analytics+Dashboard)
-
 </div>
 
 ### 📈 Real-time Metrics Display
