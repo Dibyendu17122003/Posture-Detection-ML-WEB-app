@@ -1,181 +1,176 @@
-# 🏋️‍♂️ PoseNet Fitness Tracker – AI Powered Posture Detection  
+<h1 align="center">🏋️‍♂️ PoseNet Fitness Tracker</h1>
 
-![License](https://img.shields.io/github/license/your-username/PoseNet-Fitness-Tracker?color=blueviolet)  
-![Stars](https://img.shields.io/github/stars/your-username/PoseNet-Fitness-Tracker?style=social)  
-![Forks](https://img.shields.io/github/forks/your-username/PoseNet-Fitness-Tracker?style=social)  
-![Issues](https://img.shields.io/github/issues/your-username/PoseNet-Fitness-Tracker)  
-![PRs](https://img.shields.io/github/issues-pr/your-username/PoseNet-Fitness-Tracker?color=green)  
-![Made With](https://img.shields.io/badge/Made%20with-ml5.js%20%7C%20p5.js%20%7C%20TensorFlow.js-orange)  
+<p align="center">
+  <i>A modern AI-powered web app that tracks exercises in real-time using <b>PoseNet</b> (via <code>ml5.js</code>, <code>p5.js</code>, and <code>TensorFlow.js</code>)</i>
+</p>
+
+<p align="center">
+  <a href="https://posture-detection-ml-web-app.onrender.com"><img src="https://img.shields.io/badge/Live-Demo-32CD32?style=for-the-badge&logo=githubpages&logoColor=white" /></a>
+  <a href="https://github.com/your-username/PoseNet-Fitness-Tracker"><img src="https://img.shields.io/github/stars/your-username/PoseNet-Fitness-Tracker?style=for-the-badge&logo=github&color=yellow" /></a>
+  <a href="https://github.com/your-username/PoseNet-Fitness-Tracker/fork"><img src="https://img.shields.io/github/forks/your-username/PoseNet-Fitness-Tracker?style=for-the-badge&logo=github&color=blue" /></a>
+  <img src="https://img.shields.io/github/license/your-username/PoseNet-Fitness-Tracker?style=for-the-badge&color=blueviolet" />
+</p>
 
 ---
 
-## 🔗 Live Demo  
-👉 [**PoseNet Fitness Tracker (Hosted on Render)**](https://posture-detection-ml-web-app.onrender.com)  
-
-Experience **real-time AI-powered posture detection** right in your browser. 🚀  
+## 🚀 Live Demo
+🔗 **[Click here to try the app](https://posture-detection-ml-web-app.onrender.com)** — Works directly in-browser, no installation needed.
 
 ---
 
 ## ❓ Problem Statement  
-In today’s fitness culture, people often work out without proper posture, leading to **injuries, reduced performance, and lack of progress tracking**.  
-Traditional fitness apps lack **real-time feedback** and **AI integration**, leaving users guessing about their form.  
+Staying fit at home is challenging without a personal trainer. Most fitness apps lack **real-time posture correction** and rely on manual input.  
+👉 **Goal**: Build a **web-based AI Fitness Tracker** that detects exercise posture using **PoseNet** and provides **instant feedback** with real-time visualization.
 
 ---
 
 ## 📖 Overview  
-The **PoseNet Fitness Tracker** solves this by using **PoseNet ML model (via TensorFlow.js + ml5.js)** to detect **17 body keypoints** and provide:  
-- ✅ **Real-time posture correction**  
-- ✅ **Repetition counting**  
-- ✅ **Calorie estimation**  
-- ✅ **Interactive visual feedback**  
-
-All within your **web browser** – no external software or installation required.  
+✅ Detects body posture using **PoseNet**  
+✅ Tracks exercise repetitions & calories burned  
+✅ Works **100% in-browser** → no installation required  
+✅ Provides **visual + data feedback** (charts, overlays, counters)  
+✅ Mobile & desktop friendly  
 
 ---
 
 ## 🔄 Workflow  
 
-```plaintext
-📸 Webcam Input
-   ⬇
-🧠 PoseNet Model (ml5.js + TensorFlow.js)
-   ⬇
-📍 Keypoint Detection (17 body landmarks)
-   ⬇
-📏 Exercise Logic (Angles, Thresholds, Repetition Counter, Calorie Burn)
-   ⬇
-🎨 UI Updates (Overlay Skeleton, Real-time Feedback, Graphs via Chart.js)
-   ⬇
+<div align="center">
+  
+```text
+[ WebCam Input ] → [ PoseNet Model (ml5.js) ] → [ Keypoints Detection (17 joints) ]
+        ↓
+   [ Exercise Logic: reps, calories, feedback ]
+        ↓
+[ Real-time Overlay + Charts + User Dashboard ]
+</div>
 🧠 Model Making Process
-PoseNet Architecture
+<details> <summary>📌 Expand to view details</summary>
 
-Pre-trained by Google
+PoseNet Architecture (by Google)
 
-Detects 17 keypoints (nose, eyes, shoulders, elbows, wrists, hips, knees, ankles)
+Pre-trained deep learning model
 
-Lightweight → Runs in-browser with TensorFlow.js
+Detects 17 body keypoints (elbows, shoulders, knees, etc.)
+
+Lightweight → Runs in real-time inside a browser
 
 ml5.js + p5.js Integration
 
-ml5.js: Simple API for PoseNet
+Provides simple PoseNet API in JavaScript
 
-p5.js Canvas: Real-time skeleton overlay
+Real-time visualization with p5.js canvas
 
-TensorFlow.js: Optimized deep learning model execution in-browser
+Skeleton & keypoints overlay
 
 Custom Exercise Logic
 
-Angle calculations between keypoints
+Threshold-based angle & distance detection
 
-Threshold-based posture recognition
+Repetition counter with live feedback
 
-Automated rep counter
-
-Calorie estimation based on activity
+Calorie estimation formula
 
 Visualization Layer
 
-Skeleton overlay on live camera feed
+Canvas overlays (green/red posture lines)
 
-Chart.js: Beautiful dynamic graphs
+Animated Chart.js graphs for reps & calories
 
-Real-time alerts and feedback
-
+</details>
 📊 Results
 
-✅ Detects exercises in real-time
-✅ Works directly in the browser
-✅ Accurate repetition counting (tested on push-ups, squats, jumping jacks, sit-ups)
-✅ Progress tracking with graphs
-✅ Cross-platform compatibility (mobile + desktop)
+✅ Real-time exercise recognition in-browser
+
+✅ Accurate repetition counts (tested with 4 exercises)
+
+✅ Works on desktop & mobile browsers
+
+✅ Charts & dashboard for progress tracking
+
 🚀 Deployment
 
-Hosting: Render (Static Deployment)
+Hosted on Render → static deployment
 
-No server required → Just HTML + CSS + JS
+Uses only HTML, CSS, JS → No backend server required
 
-Works on any modern browser with webcam access
+Accessible from any device with a webcam
 
-🔗 Live Demo: PoseNet Fitness Tracker
+🔗 Live App: PoseNet Fitness Tracker
 
 🛠 Tech Stack & Tools
-Category	Tools & Frameworks
+Category	Technology
 Frontend	HTML5, CSS3, JavaScript
-Machine Learning	PoseNet (TensorFlow.js), ml5.js
-Graphics/Canvas	p5.js
-Visualization	Chart.js
-Hosting	Render
-Version Control	Git & GitHub
+ML Model	PoseNet (via TensorFlow.js)
+ML Wrapper	ml5.js
+Visualization	p5.js, Chart.js
+Deployment	Render (Static Hosting)
 📂 Project File Structure
 PoseNet-Fitness-Tracker/
-│── index.html        # Main entry point
-│── style.css         # Styling (Dark/Light, Responsive Design)
-│── script.js         # Core JS logic (PoseNet + Exercise Tracker)
+│── index.html        # Main HTML entry point
+│── style.css         # Responsive + Modern UI styles
+│── script.js         # Core JS logic (PoseNet + counters)
 │── /assets           # Icons, images
-│── /models           # ml5.js PoseNet model
+│── /models           # PoseNet (loaded via ml5.js CDN)
 │── README.md         # Documentation
-
-🖥 Run Locally
-1️⃣ Clone Repo
+💻 Run Locally
+# Clone the repo
 git clone https://github.com/your-username/PoseNet-Fitness-Tracker.git
 cd PoseNet-Fitness-Tracker
 
-2️⃣ Open in Browser
-
-Simply open index.html → That’s it! 🎉
-(No server required, runs directly in-browser 🚀)
-
+# Open directly in browser
+open index.html   # Or double click file
 📦 Requirements
 
-Modern Browser (Chrome / Firefox / Edge)
+Any modern browser (Chrome/Edge/Firefox)
 
-Webcam Access
+Webcam access enabled
 
-Internet (to load ml5.js, TensorFlow.js)
+Internet connection (loads PoseNet + ml5.js from CDN)
 
 🤖 About PoseNet
 
-Developed by Google for human pose estimation
+PoseNet is a Google pre-trained deep learning model that estimates human poses in real-time.
 
-Detects 17 body keypoints in real time
+Detects 17 body keypoints
 
-Single & Multi-person detection
+Supports single & multi-person detection
 
-Optimized for in-browser use via TensorFlow.js
-
-Enables fitness, gaming, AR/VR, and gesture recognition apps
+Works directly in browser using TensorFlow.js
 
 🔮 Future Improvements
 
-✨ Add voice feedback: “Great job!”, “Straighten your back!”
-📱 Build a Progressive Web App (PWA)
-🧘 Add more workouts (Lunges, Planks, Yoga poses)
-📊 Save session history + Dashboard analytics
-👥 Enable multi-user tracking
-🎮 Gamification (leaderboards, AI fitness challenges)
+🎤 Add voice feedback → "Great job!", "Keep your back straight!"
+
+📱 Create mobile app (PWA) version
+
+🧠 Add more exercises (lunges, yoga, planks)
+
+📊 Store session history & progress dashboard
+
+👥 Multi-user mode (track 2+ people at once)
 
 👤 Author
 
 Dibyendu Karmahapatra
 
-🌐 Portfolio
+<p align="center"> <a href="https://github.com/your-username"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" /></a> <a href="https://www.linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://your-portfolio.com"><img src="https://img.shields.io/badge/Portfolio-Website-FF4088?style=for-the-badge&logo=google-chrome&logoColor=white" /></a> </p> <p align="center"> ⭐ Star this repo if you found it helpful &nbsp; | &nbsp; 🍴 Fork it to build your own </p>
+🤝 Contributing
 
-💼 LinkedIn
+Pull requests are welcome!
 
-🐙 GitHub
+Fork the repo
 
-⭐ Contribute
+Create your feature branch (git checkout -b feature/AmazingFeature)
 
-Fork the repo 🍴
+Commit changes (git commit -m 'Add amazing feature')
 
-Create a new branch 🌿
+Push to the branch (git push origin feature/AmazingFeature)
 
-Submit a PR 🔥
-
-
-
+Open a PR
 
 📜 License
 
-This project is licensed under the MIT License – feel free to use, modify, and contribute.
-📊 User Output (Reps Count, Calories, Progress Charts, Mode Info)
+This project is licensed under the MIT License.
+See LICENSE
+ for details.
