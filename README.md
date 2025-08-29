@@ -1,39 +1,49 @@
-# 🧘‍♂️ Posture Detection ML Web App  
+# 🏋️‍♂️ PoseNet Fitness Tracker – AI Powered Posture Detection  
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/your-username/posture-detection-ml-web-app?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/github/forks/your-username/posture-detection-ml-web-app?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/github/license/your-username/posture-detection-ml-web-app?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/ML-PoseNet-orange?style=for-the-badge&logo=tensorflow" />
-  <img src="https://img.shields.io/badge/Deployed-Render-brightgreen?style=for-the-badge&logo=render" />
-</p>  
+![License](https://img.shields.io/github/license/your-username/PoseNet-Fitness-Tracker?color=blueviolet)  
+![Stars](https://img.shields.io/github/stars/your-username/PoseNet-Fitness-Tracker?style=social)  
+![Forks](https://img.shields.io/github/forks/your-username/PoseNet-Fitness-Tracker?style=social)  
+![Issues](https://img.shields.io/github/issues/your-username/PoseNet-Fitness-Tracker)  
+![PRs](https://img.shields.io/github/issues-pr/your-username/PoseNet-Fitness-Tracker?color=green)  
+![Made With](https://img.shields.io/badge/Made%20with-ml5.js%20%7C%20p5.js%20%7C%20TensorFlow.js-orange)  
 
 ---
 
-## ✨ Overview  
+## 🔗 Live Demo  
+👉 [**PoseNet Fitness Tracker (Hosted on Render)**](https://posture-detection-ml-web-app.onrender.com)  
 
-📷 **AI-Powered Posture Detection** built with **PoseNet + ml5.js**, running directly in your browser.  
-Track workouts 🏋️, count reps ✅, measure calories 🔥, and get real-time feedback 🎯 — no installation required.  
+Experience **real-time AI-powered posture detection** right in your browser. 🚀  
 
-<p align="center">
-  <img src="https://github.com/your-username/posture-detection-ml-web-app/raw/main/assets/demo.gif" width="700" alt="Demo GIF" />
-</p>  
+---
+
+## ❓ Problem Statement  
+In today’s fitness culture, people often work out without proper posture, leading to **injuries, reduced performance, and lack of progress tracking**.  
+Traditional fitness apps lack **real-time feedback** and **AI integration**, leaving users guessing about their form.  
+
+---
+
+## 📖 Overview  
+The **PoseNet Fitness Tracker** solves this by using **PoseNet ML model (via TensorFlow.js + ml5.js)** to detect **17 body keypoints** and provide:  
+- ✅ **Real-time posture correction**  
+- ✅ **Repetition counting**  
+- ✅ **Calorie estimation**  
+- ✅ **Interactive visual feedback**  
+
+All within your **web browser** – no external software or installation required.  
 
 ---
 
 ## 🔄 Workflow  
 
-### 📊 Mermaid Flowchart  
-
-```mermaid
-flowchart TD
-    A[📷 Webcam Input] --> B[PoseNet Model (ml5.js)]
-    B --> C[Keypoint Detection (17 body joints)]
-    C --> D[Exercise Logic: Reps, Angles, Calories]
-    D --> E[UI Layer: Real-time Overlay + Feedback]
-    E --> F[User Output: Counts | Charts | Insights]
-<details> <summary>🔍 ASCII Fallback (click to expand)</summary>
-Webcam --> PoseNet --> Keypoints --> Exercise Logic --> UI Overlay --> User Output
-</details>
-🛠 Tech Stack
-<p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/ml5.js-FF4081?style=for-the-badge&logo=tensorflow&logoColor=white" /> <img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white" /> </p>
+```plaintext
+📸 Webcam Input
+   ⬇
+🧠 PoseNet Model (ml5.js + TensorFlow.js)
+   ⬇
+📍 Keypoint Detection (17 body landmarks)
+   ⬇
+📏 Exercise Logic (Angles, Thresholds, Repetition Counter, Calorie Burn)
+   ⬇
+🎨 UI Updates (Overlay Skeleton, Real-time Feedback, Graphs via Chart.js)
+   ⬇
+📊 User Output (Reps Count, Calories, Progress Charts, Mode Info)
