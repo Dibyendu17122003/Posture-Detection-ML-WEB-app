@@ -1,68 +1,39 @@
-# 🏋️ PoseNet Fitness Tracker  
+# 🧘‍♂️ Posture Detection ML Web App  
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5dotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/ml5.js-ffca28?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/TensorFlow.js-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-  <img src="https://img.shields.io/badge/Deployment-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
+  <img src="https://img.shields.io/github/stars/your-username/posture-detection-ml-web-app?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/forks/your-username/posture-detection-ml-web-app?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/license/your-username/posture-detection-ml-web-app?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ML-PoseNet-orange?style=for-the-badge&logo=tensorflow" />
+  <img src="https://img.shields.io/badge/Deployed-Render-brightgreen?style=for-the-badge&logo=render" />
 </p>  
 
 ---
 
-## 🌐 Live Demo  
+## ✨ Overview  
 
-👉 **[Click here to try the app](https://posture-detection-ml-web-app.onrender.com)**  
+📷 **AI-Powered Posture Detection** built with **PoseNet + ml5.js**, running directly in your browser.  
+Track workouts 🏋️, count reps ✅, measure calories 🔥, and get real-time feedback 🎯 — no installation required.  
 
----
-
-## ❓ Problem Statement  
-
-Poor posture during exercise leads to:  
-- ❌ Increased risk of injuries  
-- ❌ Ineffective workout performance  
-- ❌ Lack of real-time correction for home workouts  
-
-**Solution →** A **browser-based posture detection system** using PoseNet to analyze movements in real-time, giving **instant feedback**, rep counting, and charts for progress tracking.  
-
----
-
-## 🔎 Overview  
-
-- Detects **17 body keypoints** in real-time using PoseNet (ml5.js wrapper over TensorFlow.js).  
-- Supports multiple **exercise modes** → Squats, Push-ups, Jumping Jacks, Hand Raises.  
-- **Counts repetitions** and **estimates calories** burned.  
-- Displays **user height** in cm & ft.  
-- Modern **UI with Dark/Light mode**.  
-- **Progress visualization** using Chart.js.  
-- **Runs entirely in browser** (no backend needed).  
-
----
-
-## 💡 Applications  
-
-- 🏠 **Home Fitness** – Track workouts without expensive equipment  
-- 🏫 **Education** – Teach correct posture in physical training sessions  
-- 🏥 **Healthcare** – Rehab patients can monitor posture remotely  
-- 📊 **Sports Analytics** – Performance tracking for athletes  
+<p align="center">
+  <img src="https://github.com/your-username/posture-detection-ml-web-app/raw/main/assets/demo.gif" width="700" alt="Demo GIF" />
+</p>  
 
 ---
 
 ## 🔄 Workflow  
 
+### 📊 Mermaid Flowchart  
+
 ```mermaid
 flowchart TD
-  A[🎥 Webcam Input] --> B[🧠 PoseNet Model (ml5.js)]
-  B --> C[📍 Keypoint Detection (17 body points)]
-  C --> D[🏋️ Exercise Logic (Reps, Calories, Height)]
-  D --> E[🖥️ UI Updates (Overlay, Feedback, Charts)]
-  E --> F[✅ User Output: Counts + Graph + Mode Info]
-
-
-Create a new branch
-
-Submit a PR 🚀
+    A[📷 Webcam Input] --> B[PoseNet Model (ml5.js)]
+    B --> C[Keypoint Detection (17 body joints)]
+    C --> D[Exercise Logic: Reps, Angles, Calories]
+    D --> E[UI Layer: Real-time Overlay + Feedback]
+    E --> F[User Output: Counts | Charts | Insights]
+<details> <summary>🔍 ASCII Fallback (click to expand)</summary>
+Webcam --> PoseNet --> Keypoints --> Exercise Logic --> UI Overlay --> User Output
+</details>
+🛠 Tech Stack
+<p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/ml5.js-FF4081?style=for-the-badge&logo=tensorflow&logoColor=white" /> <img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white" /> </p>
