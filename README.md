@@ -49,10 +49,10 @@
 
 ```bash
 # 1. Clone the repository (or download ZIP)
-git clone https://github.com/your-username/PoseNet-Fitness-Tracker.git
+git clone https://github.com/Dibyendu17122003/Posture-Detection-ML-WEB-app/tree/main
 
 # 2. Navigate to project directory
-cd PoseNet-Fitness-Tracker
+cd Posture-Detection-ML-WEB-app
 
 # 3. Open in any modern browser - it just works!
 # On macOS:
