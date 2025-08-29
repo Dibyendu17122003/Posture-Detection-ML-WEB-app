@@ -279,15 +279,6 @@ We believe in the power of open-source collaboration and welcome contributions o
 # Development environment setup
 git clone https://github.com/your-username/PoseNet-Fitness-Tracker.git
 cd PoseNet-Fitness-Tracker
-
-# Explore the code structure
-# - index.html: Main application structure
-# - style.css: Modern CSS with Flexbox/Grid layout
-# - script.js: Core application logic
-# - assets/: Visual assets and icons
-
-# Make changes and test locally
-# Submit pull requests with clear descriptions
 ```
 
 ### 🎨 Areas for Contribution
