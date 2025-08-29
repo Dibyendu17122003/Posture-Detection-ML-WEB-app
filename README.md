@@ -28,8 +28,7 @@
 
 <div align="center">
   
-![PoseNet Fitness Tracker Interface](https://via.placeholder.com/1200x600/1a202c/FFFFFF/?text=Advanced+AI+Fitness+Tracking+Dashboard)
-
+![PoseNet Fitness Tracker Interface](https://via.placeholder.com/1200x600/1a202c/FFFFFF/?text=AI+Fitness+Tracking+Dashboard+with+Real-time+Feedback)
 </div>
 
 ## 🌟 Revolutionizing Home Fitness with AI
